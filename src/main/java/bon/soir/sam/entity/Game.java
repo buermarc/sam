@@ -35,12 +35,14 @@ public class Game extends RepresentationModel<Game> implements Serializable {
 	private String name;
 
     @ManyToMany
+    @NotNull
     @JoinTable(
         name="team_game",
         joinColumns = @JoinColumn(name = "game_id"),
         inverseJoinColumns = @JoinColumn(name = "team_id"))
     private List<Team> teams;
 
+    @ManyToOne
     private Team winnerTeam;
 
     @NotNull
