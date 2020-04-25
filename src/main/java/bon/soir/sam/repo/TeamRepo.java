@@ -8,6 +8,8 @@ package bon.soir.sam.repo;
 //import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
@@ -16,7 +18,8 @@ import bon.soir.sam.service.TeamService;
 
 @RepositoryRestResource(collectionResourceRel = "team", path = "team")
 public interface TeamRepo extends PagingAndSortingRepository<Team, Long>{
-    
+
+    List<Team> findByDivisionId(long divisionId);
 //    @Autowired
 //    private LigaService ligaService;
 }

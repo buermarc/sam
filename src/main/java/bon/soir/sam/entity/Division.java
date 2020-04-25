@@ -14,6 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 //import javax.validation.constraints.Size;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
@@ -34,6 +35,7 @@ public class Division extends RepresentationModel<Division> implements Serializa
 	private String name;
 
     @OneToMany(mappedBy="division")
+    @Getter
     private List<Team> teams = new ArrayList<>();
     
     @OneToMany(mappedBy="division")
@@ -41,4 +43,8 @@ public class Division extends RepresentationModel<Division> implements Serializa
 
     @ManyToOne
     private Liga liga;
+
+    public List<Team> getTeams() {
+        return this.teams;
+    }
 }

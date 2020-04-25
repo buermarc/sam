@@ -44,4 +44,5 @@ public class Team extends RepresentationModel<Team> implements Serializable {
 
     @ManyToOne
     private Division division;
+
 }
