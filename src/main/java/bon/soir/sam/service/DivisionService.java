@@ -20,6 +20,13 @@ public class DivisionService {
 
     @Autowired 
     private DivisionRepo divisionRepo;
+
+    public Division getById(long divisionId) {
+        Optional<Division> opt = divisionRepo.findById(divisionId);
+        Division div;
+        div = opt.get();
+        return div;
+    }
    
     public List<TeamWin> createLeaderboard(long divisionId) {
         Optional<Division> opt = divisionRepo.findById(divisionId);

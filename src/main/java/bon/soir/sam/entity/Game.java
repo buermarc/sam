@@ -12,6 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.ManyToMany;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.FetchType;
 import javax.validation.constraints.NotNull;
 //import javax.validation.constraints.Size;
 import lombok.Data;
@@ -34,7 +35,7 @@ public class Game extends RepresentationModel<Game> implements Serializable {
 	@NotNull
 	private String name;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @NotNull
     @JoinTable(
         name="team_game",
