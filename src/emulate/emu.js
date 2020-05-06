@@ -1,6 +1,7 @@
 "use strict";
 const fetch = require("node-fetch");
 async function a () {
+
     let request = {
         name: "NewGame",
         teams: ["/api/team/1", "/api/team/2"],
