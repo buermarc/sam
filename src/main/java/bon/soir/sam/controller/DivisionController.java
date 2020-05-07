@@ -50,4 +50,3 @@ public class DivisionController {
             return new ResponseEntity<>(new CollectionModel<TeamWin>(teamWins, link), HttpStatus.OK);
             }
 }
-
