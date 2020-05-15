@@ -5,7 +5,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import bon.soir.sam.entity.Game;
-import bon.soir.sam.service.GameService;
 
 /**
  * Erlaubt angepasste Export Mappings des Repositories
