@@ -14,9 +14,9 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import bon.soir.sam.entity.Liga;
 import bon.soir.sam.service.LigaService;
 
+/**
+ * Erlaubt angepasste Export Mappings des Repositories
+ */
 @RepositoryRestResource(collectionResourceRel = "liga", path = "liga")
 public interface LigaRepo extends PagingAndSortingRepository<Liga, Long>{
-    
-//    @Autowired
-//    private LigaService ligaService;
 }

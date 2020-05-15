@@ -3,12 +3,6 @@ const fetch = require("node-fetch");
 async function a () {
 
     async function first() {
-        let request = {
-            name: "NewGame",
-            teams: ["/api/team/1", "/api/team/2"],
-            winnerTeam: "/api/team/2", 
-            division: "/api/division/1",
-        }
 
         let response = await fetch("http://localhost:9999/api/liga/", {
             method: "GET",

@@ -13,6 +13,10 @@ import bon.soir.sam.entity.Division;
 import bon.soir.sam.repo.TeamRepo;
 import bon.soir.sam.repo.DivisionRepo;
 
+/**
+ * Service Klasse für die Logik benötigt 
+ * für das Erstellen der Division Leadboards
+ */
 @Service
 public class DivisionService {
     @Autowired 

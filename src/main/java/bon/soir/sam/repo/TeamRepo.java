@@ -16,10 +16,11 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import bon.soir.sam.entity.Team;
 import bon.soir.sam.service.TeamService;
 
+/**
+ * Erlaubt angepasste Export Mappings des Repositories
+ */
 @RepositoryRestResource(collectionResourceRel = "team", path = "team")
 public interface TeamRepo extends PagingAndSortingRepository<Team, Long>{
 
     List<Team> findByDivisionId(long divisionId);
-//    @Autowired
-//    private LigaService ligaService;
 }

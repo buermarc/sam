@@ -17,21 +17,10 @@ import bon.soir.sam.entity.Team;
 import bon.soir.sam.dto.TeamWin;
 import bon.soir.sam.service.DivisionService;
 
+/**
+ * Erlaubt angepasste Export Mappings des Repositories
+ */
 @RepositoryRestResource(exported=true, collectionResourceRel = "division", path = "division")
 public interface DivisionRepo extends PagingAndSortingRepository<Division, Long>{
     
-/*    @RequestMapping(value = "/api/division/{divisionId}/leaderboard", produces = { "application/hal+json" })
-    public CollectionModel<TeamWin> getLeaderboard(
-            @PathVariable long divisionId){
-            List<TeamWin> teamWins = divisionService.createLeaderboard(divisionId);
-            for (TeamWin teamWin : teamWins) {
-                Link selfLink = linkTo(methodOn(DivisionController.class).getDivisionById(divisionId)).withSelfRel();
-                teamWin.add(selfLink);
-            }
-
-            Link link = linkTo(methodOn(DivisionController.class).getLeaderboard(divisionId)).withSelfRel();
-            return new CollectionModel<TeamWin>(teamWins, link);
-            }*/
-//    @Autowired
-//    private LigaService ligaService;
 }

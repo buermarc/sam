@@ -9,21 +9,10 @@ import bon.soir.sam.repo.*;
 import bon.soir.sam.entity.Game;
 import bon.soir.sam.entity.Team;
 
+/**
+ * Service Klasse für Implemtierung von 
+ * möglicherweise benötigter Logik
+ */
 @Service
 public class GameService { 
-
-    @Autowired
-    private GameRepo gameRepo;
-
-    @Autowired
-    private TeamRepo teamRepo;
-
-    @Autowired
-    private DivisionRepo divisionRepo; 
-
-    public Game createNewGame(Game gameRequest) throws Exception {
-        List<Team> teams = gameRequest.getTeams();
-        System.out.println(teams.toString());
-        return gameRequest;
-    }
 }

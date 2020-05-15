@@ -10,6 +10,7 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
 
 /**
+ * Veröffentlicht die IDs der Entitäten
  * Vgl. https://stackoverflow.com/a/47765828
  */
 @Configuration

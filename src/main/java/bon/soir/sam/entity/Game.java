@@ -21,6 +21,9 @@ import lombok.AllArgsConstructor;
 
 import org.springframework.hateoas.RepresentationModel;
 
+/**
+ * Representative Entitätsklasse für eine Game
+ */
 @Entity
 @Data
 @NoArgsConstructor	

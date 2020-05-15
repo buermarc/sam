@@ -1,4 +1,4 @@
-package bon.soir.sam.controller;
+
 
 import java.util.List;
 
@@ -21,7 +21,9 @@ import bon.soir.sam.service.DivisionService;
 import bon.soir.sam.repo.DivisionRepo;
 import bon.soir.sam.entity.Division;
 
-//@RestController
+/**
+ * Controller für ein GET Mapping eines Leaderboards einer Division
+ */
 @BasePathAwareController
 @Transactional
 public class DivisionController {

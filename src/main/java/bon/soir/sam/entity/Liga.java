@@ -18,6 +18,9 @@ import lombok.AllArgsConstructor;
 
 import org.springframework.hateoas.RepresentationModel;
 
+/**
+ * Representative Entitätsklasse für eine Liga
+ */
 @Entity
 @Data
 @NoArgsConstructor	
